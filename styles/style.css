@@ -133,6 +133,7 @@ hr{
     flex-direction: column;
     color:gray;
     font-family: cursive;
+    overflow: hidden;
 }
 #sobre  h2:first-child{
     margin-bottom: 50px;
