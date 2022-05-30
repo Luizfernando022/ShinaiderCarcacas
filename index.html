@@ -13,7 +13,12 @@
 <body>
 
     <header>
-        <h1>Logotipo</h1>
+        <h1>
+            <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+                <p>Shinaider Carcaças</p>
+                <img src="./IMG_20220530_145543.png" alt="" width="200px">
+            </div>
+        </h1>
         <nav>
             <ul>
                 <li>Serviços</li>
@@ -23,16 +28,16 @@
         </nav>
     </header>
     <main>
-        <img class="icontop" src="./" alt="">
+        <img class="icontop" src="./mecanico.png" alt="">
         <div id="main">
             <h2>Shinaider Carcaças</h2>
             <p>Empresa especializada com 20 anos de experiencia em Recuperação de carcaças e eixos no lugar</p>
         </div>
-        <img id="img" src="./download.jpg" alt="">
+        <img id="img" src="./eixo.png" alt="">
     </main>
 
     <div id="slogan">
-        <div id="sloganContent">
+        <div id="sloganContent" data-aos="fade-right" data-aos-duration="1000" >
             <h1>Atendimento remoto</h1>
             <p>
               Atendimento feito em estradas com auxilio de geradores
@@ -42,14 +47,14 @@
 
     <div id="sobre">
         <h2>Shinaider Carcaças</h2>
-        <div class="sobre">
+        <div class="sobre" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque corrupti laboriosam consectetur
                 suscipit maiores, totam soluta. Officiis commodi in molestias, veniam ducimus, odit voluptates ratione
                 inventore molestiae quod facilis.</p>
         </div>
         <hr width="70%" color="black" style="margin:30px 0px;">
         <h2>Shinaider Soares</h2>
-        <div class="sobre">
+        <div class="sobre" data-aos="fade-left" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque corrupti laboriosam consectetur
                 suscipit maiores, totam soluta. Officiis commodi in molestias, veniam ducimus, odit voluptates ratione
                 inventore molestiae quod facilis.</p>
@@ -101,5 +106,9 @@
 
 </body>
 <script src="./scripts/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>

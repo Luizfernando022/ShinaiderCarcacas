@@ -41,7 +41,12 @@ li:hover{
     color: rgb(0, 50, 60);
 }
 
-
+.icontop{
+    position: absolute;
+    width: 100px;
+    top: 40px;
+    left: 40px;
+}
 
 main{
     margin-top: 50px;
@@ -54,6 +59,7 @@ main{
     justify-content: space-around;
     align-items: center;
     color: rgb(0, 50, 60);
+    position: relative;
 }
 #main{
     text-align: center;
@@ -61,8 +67,6 @@ main{
     font-family: monospace;
 }
 #img{
-    background-color: black;
-    height: 200px;
     width: 500px;
 }
 #slogan{
