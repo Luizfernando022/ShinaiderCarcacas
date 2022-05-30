@@ -82,7 +82,7 @@ main{
 #slogan{
 
     margin-top: 100px;
-    background-image:url(/images/sloganWallpaper.jpg);
+    background-image:url(./images/sloganWallpaper.jpg);
     background-position: 10%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,6 +205,12 @@ hr{
     }
     .serv-item{
         min-width: 200px;
+    }
+    header{
+        padding: 20px;
+    }
+    #sloganContent{
+        padding: 10px;
     }
     #logo img{
         display: none;
