@@ -82,7 +82,7 @@ main{
 #slogan{
 
     margin-top: 100px;
-    background-image:url(./sloganWallpaper.jpg);
+    background-image:url(/sloganWallpaper.jpg);
     background-position: 10%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,12 @@ main{
 #sloganContent h2{
     color: orange
 }
-
+hr{
+    margin:30px 0px;
+    border: none;
+    border-top: 5px dotted black;
+    width: 70%;
+}
 #sobre{
     padding: 40px;
     box-sizing: border-box;
@@ -199,7 +204,7 @@ main{
         display: none;
     }
     #slogan{
-        background-image: url(./gerador.jpg);
+        background-image: url(/gerador.jpg);
         background-position: center;
         background-size: auto;
     }
