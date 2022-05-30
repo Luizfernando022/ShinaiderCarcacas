@@ -9,7 +9,7 @@ body{
     background-color:rgb(184, 184, 184);
     height: 100vh; 
     font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Source Sans Pro', sans-serif;
 }
 #logo{
     display: flex; 
@@ -110,7 +110,7 @@ main{
 #sloganContent p{
         font-size: 20px;
         font-weight: 500;
-        color: white
+        color: white;
 }
 #sloganContent h2{
     color: orange
@@ -132,7 +132,7 @@ hr{
     align-items: center;
     flex-direction: column;
     color:gray;
-    font-family: cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     overflow: hidden;
 }
 #sobre  h2:first-child{
@@ -165,6 +165,9 @@ hr{
 }
 #servicos h2{
     text-decoration: underline;
+}
+#servicos h3{
+    font-size: 22px;
 }
 .servicos-div{
     display: flex;
