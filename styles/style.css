@@ -220,10 +220,10 @@ hr{
 }
 #contato li::before{
     content: "";
-    width: 100px;
-    height: 100px;
+    display: inline-block;
     background-color: red;
-    /* background-image: url(/images/gerador.jpg); */
+    width: 16px;
+    height: 16px;
 }
 
 @media screen and (max-width:768px){
