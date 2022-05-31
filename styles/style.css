@@ -131,6 +131,14 @@ hr{
     border-top: 5px dotted black;
     width: 70%;
 }
+.contate{
+    padding: 10px 20px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 #sobre{
     padding: 40px;
     box-sizing: border-box;
@@ -213,11 +221,49 @@ hr{
     background-color:darkorange;
     height: 500px;
     margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 #contato li{
-    list-style: url(../whatsapp.png);
-    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(196, 196, 196);
+    width: 50%;
+    margin: 30px;
+    padding: 10px;
 }
+#contato a{
+    color: rgb(0, 50, 60);
+}
+#contato h2{
+    text-decoration: underline;
+}
+.wpp::before{
+    background: url(../images/whatsapp.png);
+
+}
+.tel::before{
+    background: url(../images/ligar.png);
+
+}
+.email::before{
+    background: url(../images/gmail.png);
+
+}
+.ig::before{
+    background: url(../images/instagram.png);
+}
+.wpp::before, .tel::before, .email::before, .ig::before{
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
 
 
 @media screen and (max-width:768px){
