@@ -18,8 +18,24 @@ function animationOnScroll(){
 }
 
 let anuncioDiv = document.getElementById('anuncio')
+
 document.addEventListener("mouseleave",()=>{
-    anuncioDiv.style.display = "flex"
+    let contador = 1;
+
+    let interval = setInterval(() => {
+        if(contador == 5){
+            anuncioDiv.style.display = "flex"
+            anuncioDiv.style.opacity = " 1"
+            clearInterval(interval)
+        }else{
+            contador++
+        }
+    }, 1000);
+
+    document.addEventListener("mouseenter",()=>{
+        clearInterval(interval)
+    })
+
 })
 
 document.getElementById('anuncioExit').addEventListener('click',removerAnuncio)
@@ -28,9 +44,7 @@ anuncioDiv.addEventListener('click',removerAnuncio)
 
 
 function removerAnuncio(){
-    console.log('funcionando')
-    console.log(anuncioDiv)
-    anuncioDiv.display = "none"
+    anuncioDiv.style.display = "none"
 }
 
 
