@@ -264,6 +264,81 @@ hr{
     background-size: cover;
 }
 
+/*  Animações  */
+
+[data-animation]{
+    opacity: 0;
+    transition: all 1000ms;
+}
+
+[data-animation="left"]{
+    transform: translate3d(-200px, 0, 0);
+}
+[data-animation="right"]{
+    transform: translate3d(200px, 0, 0);
+}
+[data-animation="top"]{
+    transform: translate3d(0px, -150px, 0);
+}
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+#anuncio{
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#anuncioContent{
+    background-color: rgba(0, 0, 0,0.8);
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 70vh;
+    min-width: 60vw;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 28px;
+    padding:20px;
+    box-sizing: border-box;
+    position: relative;
+}
+#anuncioContent p{
+    font-size: 22px;
+    line-height: 30px;
+}
+#anuncioContent button{
+    padding: 10px 20px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none
+}
+#anuncioExit{
+    content: "\u274C";
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+
+}
+#anuncioExit::selection{
+    background-color: transparent;
+}   
+
+    
+
 
 
 @media screen and (max-width:768px){

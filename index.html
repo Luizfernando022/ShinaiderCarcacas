@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
@@ -43,7 +42,7 @@
     </main>
 
     <div id="slogan">
-        <div id="sloganContent" data-aos="fade-down">
+        <div id="sloganContent" data-animation="top">
             <h2>Atendimento remoto</h2>
             <p>
                 Atendimento feito em estradas com auxilio de geradores
@@ -56,14 +55,14 @@
     <div id="sobre">
         <h2>Sobre</h2>
         <h2>Shinaider Carcaças</h2>
-        <div class="sobre" data-aos="fade-right">
+        <div class="sobre" data-animation="right">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque corrupti laboriosam consectetur
                 suscipit maiores, totam soluta. Officiis commodi in molestias, veniam ducimus, odit voluptates ratione
                 inventore molestiae quod facilis.</p>
         </div>
         <hr>
         <h2>Shinaider Soares</h2>
-        <div class="sobre" data-aos="fade-left">
+        <div class="sobre" data-animation="left">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque corrupti laboriosam consectetur
                 suscipit maiores, totam soluta. Officiis commodi in molestias, veniam ducimus, odit voluptates ratione
                 inventore molestiae quod facilis.</p>
@@ -72,7 +71,7 @@
     <div id="servicos">
         <h2>Serviços</h2>
         <div>
-            <div class="servicos-div" data-aos="fade-right">
+            <div class="servicos-div" data-animation="left">
 
                 <div class="serv-item">
                     <h3>LOREN IPSUM AMETHIST</h3>
@@ -129,13 +128,23 @@
 
     </footer>
 
+    <div id="anuncio">
+        <div id="anuncioContent">
+            <h2>
+                Já está saindo?
+            </h2>
+            <div>
+                <p>Você pode tirar suas dúvidas no nosso whatsapp</p>
+                <p>estamos disponiveis para atendimento<br>das 06:00 ás 22:00</p>
+            </div>
+           <a href="#contato"><button onclick="removerAnuncio()">Contato</button></a>
+            <div id="anuncioExit">
+                &#x274C
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="./scripts/script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000,
-    });
-</script>
 
 </html>
