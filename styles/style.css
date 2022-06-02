@@ -324,7 +324,53 @@ hr{
 #anuncioExit::selection{
     background-color: transparent;
 }   
+#balao-wpp{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+    right: 15px;
+    bottom: 15px;
+    animation: balao infinite linear 1200ms;
+    animation-delay: 2s;
+}
+.balao-animation{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: balaoAnimation infinite linear 1200ms;
+    position: absolute;
+}
 
+.balaoImg{
+    position: absolute
+}
+
+@keyframes balao{
+  
+    0%{}
+    20%{bottom: 30px;}
+    70%{bottom: 15px;}
+    85%{bottom: 20px;}
+    100%{bottom: 15px;}
+
+}
+    
+
+@keyframes balaoAnimation{
+    0%{
+    }
+    100%{
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
     
 
 

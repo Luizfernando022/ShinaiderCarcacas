@@ -66,7 +66,7 @@ window.addEventListener('scroll',()=>{
         timer = true
         setTimeout(()=>{
             timer = false
-        },200)
+        },150)
     }
     
 })
