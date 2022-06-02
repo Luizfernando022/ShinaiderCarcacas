@@ -230,19 +230,44 @@ hr{
 #contato .field{
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 20px;
-    background-color: rgb(196, 196, 196);
-    margin: 30px;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    margin-top: 10px;
     padding: 10px;
     flex-wrap: wrap;
     overflow: hidden;
+    box-sizing: border-box;
 }
+
 #contato a{
     color: rgb(0, 50, 60);
 }
 #contato h2{
     text-decoration: underline;
 }
+#contato-content{
+    display: flex;
+    width: 100%;
+    background-color: darkorange;
+    justify-content: space-around;
+    align-items: center;
+    column-gap:40px;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#contato-content iframe{
+    min-width: 500px;
+    box-shadow: 2px 2px 10px;
+}
+#contato-content div{
+    word-break: break-all;
+ }
+
 
 .fieldValue{
     display: flex;
@@ -399,7 +424,7 @@ hr{
     #slogan{
         background-image: url(../images/gerador.jpg);
         background-position: center;
-        background-size: auto;
+        background-size: cover;
     }
     #img{
         width: 200px;
@@ -411,9 +436,12 @@ hr{
         font-size: 16px;
     }
     #contato .field{
+        width: 100%;
+        gap: 10px;
         flex-direction: column;
-        margin: 0;
-        margin-top: 20px;
+    }
+    iframe{
+        display: none;
     }
     
     
