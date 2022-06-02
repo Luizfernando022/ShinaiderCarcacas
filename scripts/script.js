@@ -6,7 +6,6 @@ let timer = false
 function animationOnScroll(){
 
     const windowTop = window.pageYOffset + window.innerHeight * 0.75
-    console.log('a')
     elements.forEach(element=>{
        if(windowTop > element.offsetTop){
            element.classList.add(animationClass)
